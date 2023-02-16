@@ -14,12 +14,18 @@ public class GameManager : MonoBehaviour
     public int score;
 
     public GameObject gameOverDisplay;
+    public GameObject mrBeatProjectile;
 
     // Start is called before the first frame update
     void Start()
     {
         score = 0;
         StartCoroutine(nameof(SpawnWave));
+
+        if (GameObject.Find("ship").GetComponent<SpriteRenderer>().sprite.name == "MRBEAT")
+        {
+            GameObject.Find("ship").GetComponent<ShipControl>().bullet = mrBeatProjectile;
+        }
     }
 
     // Update is called once per frame

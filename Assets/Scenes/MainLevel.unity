@@ -757,7 +757,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.7110133
+  orthographic size: 5.735147
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1602,6 +1602,7 @@ MonoBehaviour:
   scoreDisplay: {fileID: 389627121}
   score: 0
   gameOverDisplay: {fileID: 265231273}
+  mrBeatProjectile: {fileID: 8781967207058444784, guid: 67894e28bb5c0f0459119a66657a6bb5, type: 3}
 --- !u!4 &1896302959
 Transform:
   m_ObjectHideFlags: 0
